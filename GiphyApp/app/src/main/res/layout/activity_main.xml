@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lottieCamera"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:layout_constraintBottom_toBottomOf="@+id/etSearch"
+        app:layout_constraintEnd_toStartOf="@+id/etSearch"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/etSearch"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/camera" />
+
+    <EditText
+        android:id="@+id/etSearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="58dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/search_bg"
+        android:backgroundTint="#DFE5E4"
+        android:drawablePadding="10dp"
+        android:padding="10dp"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!--    <Button-->
+    <!--        android:id="@+id/btnSearch"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_marginStart="20dp"-->
+    <!--        android:layout_marginTop="30dp"-->
+    <!--        android:layout_toRightOf="@id/etSearch"-->
+    <!--        android:backgroundTint="@color/white"-->
+    <!--        android:padding="20dp"-->
+    <!--        android:text="Search"-->
+    <!--        android:textColor="@color/black"-->
+    <!--        android:textSize="10sp" />-->
+
+
+    <ImageButton
+        android:id="@+id/btnSearch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@android:color/transparent"
+        app:layout_constraintEnd_toEndOf="@+id/etSearch"
+        app:layout_constraintHorizontal_bias="0.945"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/etSearch"
+        app:srcCompat="@drawable/ic_baseline_search_24" />
+
+    <LinearLayout
+        android:id="@+id/LayoutButtons"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/etSearch">
+
+        <Button
+            android:id="@+id/btnTrend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/button_bg"
+            android:backgroundTint="@color/black"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:text="Trending"
+            android:textColor="@color/white" />
+
+<!--                <androidx.cardview.widget.CardView-->
+<!--                    android:id="@+id/cardTrending"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginStart="40dp"-->
+<!--                    android:layout_marginTop="15dp"-->
+<!--                    android:background="@drawable/button_bg"-->
+<!--                    android:backgroundTint="@color/black"-->
+<!--                    app:cardCornerRadius="20dp">-->
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/tvTrending"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        android:layout_margin="5dp"-->
+<!--                        android:paddingStart="30dp"-->
+<!--                        android:paddingTop="10dp"-->
+<!--                        android:paddingEnd="30dp"-->
+<!--                        android:paddingBottom="10dp"-->
+<!--                        android:text="TRENDING"-->
+<!--                        android:textAlignment="center"-->
+<!--                        android:textColor="@color/white"-->
+<!--                        android:textSize="15sp"-->
+<!--                        android:textStyle="bold" />-->
+
+
+<!--                </androidx.cardview.widget.CardView>-->
+
+
+        <!--        <androidx.cardview.widget.CardView-->
+        <!--            android:id="@+id/cardRandom"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_marginStart="40dp"-->
+        <!--            android:layout_marginTop="15dp"-->
+        <!--            android:background="@drawable/button_bg"-->
+        <!--            android:backgroundTint="@color/black"-->
+        <!--            app:cardCornerRadius="20dp">-->
+
+        <!--            <TextView-->
+        <!--                android:id="@+id/tvRandom"-->
+        <!--                android:layout_width="match_parent"-->
+        <!--                android:layout_height="match_parent"-->
+        <!--                android:layout_margin="5dp"-->
+        <!--                android:paddingStart="30dp"-->
+        <!--                android:paddingTop="10dp"-->
+        <!--                android:paddingEnd="30dp"-->
+        <!--                android:paddingBottom="10dp"-->
+        <!--                android:text="RANDOM"-->
+        <!--                android:textAlignment="center"-->
+        <!--                android:textColor="@color/white"-->
+        <!--                android:textSize="15sp"-->
+        <!--                android:textStyle="bold" />-->
+
+
+        <!--        </androidx.cardview.widget.CardView>-->
+
+
+        <Button
+            android:id="@+id/btnRandom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/button_bg"
+            android:backgroundTint="@color/black"
+            android:paddingLeft="40dp"
+            android:paddingRight="30dp"
+            android:text="Random"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/FLRandom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/LayoutButtons">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="30dp"
+            android:elevation="20dp"
+            app:cardCornerRadius="20dp">
+
+            <ImageView
+                android:id="@+id/ivRandomGif"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_margin="20dp"
+                android:scaleType="centerCrop" />
+
+        </androidx.cardview.widget.CardView>
+
+
+    </FrameLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/searchRecycler"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etSearch"
+        android:layout_marginTop="80dp"
+        app:layout_constraintTop_toBottomOf="@id/etSearch" />
+
+    <ProgressBar
+        android:id="@+id/ProgressBarMain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/black"
+        android:indeterminate="true"
+        android:indeterminateTint="@color/black"
+        android:indeterminateTintMode="src_atop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
